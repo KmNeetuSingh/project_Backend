@@ -1,9 +1,13 @@
 package com.example.demo.framework.imageslider.service;
 
-import com.example.demo.framework.imageslider.model.ImageSlider;
+import com.example.demo.framework.imageslider.dto.ImageSliderDto;
+import com.example.demo.framework.imageslider.model.Image;
+
 import java.util.List;
 
 public interface ImageSliderService {
-    List<ImageSlider> getAllImages();
-    ImageSlider saveImage(ImageSlider image);
+
+    List<Image> getAllImages();
+
+    Image createImage(ImageSliderDto dto);
 }
